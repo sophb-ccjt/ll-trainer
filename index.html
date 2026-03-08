@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LL Trainer</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <label>puzzle type:
+        <select id="puzzle-type"></select>
+    </label>
+    <label>difficulty:
+        <select id="difficulty"></select>
+    </label>
+
+    <button id="generate-puzzle">generate puzzle</button>
+
+    <div id="puzzle">
+        <label id="answer-label">
+            what is this (?:O|P)LL?
+        </label>
+        <input type="text" id="answer-input" />
+        <button id="answer-submit">submit</button>
+        <label id="answer-result"></label>
+        <button id="show-solution">show solution</button>
+        <div id="solution-div">
+            <p id="solution-answer">Answer (Algorithm Name): yo mama</p>
+            <p id="solution-alg">Algorithm: (R U R' U')6 aka The Sexy Move™</p>
+        </div>
+        <button id="next-puzzle">next puzzle</button>
+
+        <p>Emoji Representation:</p>
+        <code id="puzzle-emoji">puzzle (in emojis) goes here</code>
+
+        <p>Text Representation:</p>
+        <code id="puzzle-text">puzzle (in text) goes here</code>
+    </div>
+    <p>
+        press <b>enter</b> to submit,
+        <br>
+        <b>s</b> to show the solution,
+        <br>
+        <b>n</b> to go to the next puzzle,
+        <br>
+        and <b>g</b> to generate a new puzzle
+        <br>
+        <br>
+        <small>(or just use the buttons)</small>
+    </p>
+
+    <script src="util.js"></script>
+    <script src="puzzle.cases.js"></script>
+    <script src="puzzle.js"></script>
+    <script src="ui.js"></script>
+</body>
+</html>
