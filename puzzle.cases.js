@@ -246,7 +246,7 @@ b y y y o
         T: {
             pattern: `  g* g r
 o y y y b
-r* y y y o*
+r*{.1} y y y o*
 o y y y g
   b b* r`,
             algs: [
@@ -302,9 +302,9 @@ o* y y y o
             ]
         },
         H: {
-            pattern: `  g b* g
+            pattern: `  g b g
 o y y y r
-r* y y y o*
+r* y y y o*{.25}
 o y y y r
   b g* b`,
             algs: [
